@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.master.spring.spring2proj5.xml.XmlPersonDAOa;
+import com.master.spring.spring2proj5.xml.XmlPersonDAO;
 
 @Configuration
 public class Spring2proj5Application {
@@ -15,7 +15,7 @@ public class Spring2proj5Application {
 	public static void main(String[] args) {
 		try (ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(
 				"applicationContext.xml")) {
-			XmlPersonDAOa personDAO = applicationContext.getBean(XmlPersonDAOa.class);
+			XmlPersonDAO personDAO = applicationContext.getBean(XmlPersonDAO.class);
 			LOGGER.info("{}", personDAO);
 			LOGGER.info("{}", personDAO.getXmlJdbcConnection());
 		}
