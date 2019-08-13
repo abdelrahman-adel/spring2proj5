@@ -1,13 +1,16 @@
 package com.master.spring.spring2proj5.main;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Configuration;
 
-@SpringBootApplication
+@Configuration
 public class Spring2proj5Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Spring2proj5Application.class, args);
+		try (AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(
+				Spring2proj5Application.class)) {
+
+		}
 	}
 
 }
