@@ -1,14 +1,14 @@
 package com.master.spring.spring2proj5.xml;
 
-public class XMLPersonDAO {
+public class XmlPersonDAO {
 
-	private XMLJdbcConnection xmlJdbcConnection;
+	private XmlJdbcConnection xmlJdbcConnection;
 
-	public XMLJdbcConnection getXmlJdbcConnection() {
+	public XmlJdbcConnection getXmlJdbcConnection() {
 		return xmlJdbcConnection;
 	}
 
-	public void setXmlJdbcConnection(XMLJdbcConnection xmlJdbcConnection) {
+	public void setXmlJdbcConnection(XmlJdbcConnection xmlJdbcConnection) {
 		this.xmlJdbcConnection = xmlJdbcConnection;
 	}
 }
